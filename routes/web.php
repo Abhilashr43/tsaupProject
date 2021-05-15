@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $var = 'ppppppppppppppp';
+    return view('pages.index', compact('var'));
+
 });
+
+
+// Route::get('{index.blade}', function($index)
+// {
+//      //
+//     return View::make('index/'.$index);
+// });
