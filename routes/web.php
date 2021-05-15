@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\WebConfig;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $var = 'ppppppppppppppp';
+    $var =  WebConfig::all();
     return view('pages.index', compact('var'));
-
 });
 
 

@@ -4,7 +4,8 @@
 
     <div role="main" class="main">
         <!-- Slider Section  -->
-        @include('components.slider')
+        @include('components.slider', ['silderdata'=> $var ])
+        <!-- Slider Section End -->
 
         <div class="home-intro bg-primary" id="home-intro">
             <div class="container">
@@ -12,8 +13,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <p>
-                            {{ $var }} <span
-                                class="highlighted-word">Technology</span>
+                            <span class="highlighted-word">Technology</span>
                             <span>Check out our options and features included.</span>
                         </p>
                     </div>
@@ -28,6 +28,7 @@
 
             </div>
         </div>
+
 
         <div class="container">
 
