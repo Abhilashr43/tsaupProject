@@ -22,13 +22,13 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            {{-- <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                 <h5 class="text-3 mb-3">LATEST TWEETS</h5>
                 <div id="tweet" class="twitter" data-plugin-tweets
                     data-plugin-options="{'username': 'oklerthemes', 'count': 2}">
                     <p>Please wait...</p>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
                 <div class="contact-details">
                     <h5 class="text-3 mb-3">CONTACT US</h5>
@@ -64,7 +64,8 @@
                 <div
                     class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
                     <a href="index" class="logo pr-0 pr-lg-3">
-                        <img alt="Porto Website Template" src="img/logo-footer.png" class="opacity-5" height="33">
+                        <img alt="Porto Website Template" src={{ asset('img/logo-footer.png') }} class="opacity-5"
+                            height="33">
                     </a>
                 </div>
                 <div

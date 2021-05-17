@@ -1,1 +1,8 @@
 /* Add here all your CSS customizations */
+.home-intro{
+	margin-bottom: auto;
+}
+
+.text-dec-n{
+	text-decoration: none !important;
+}
